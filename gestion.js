@@ -84,7 +84,7 @@ function changePedidoEstado(id, currentEstado) {
         headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Origin': 'no-cors',
         },
         body: JSON.stringify({ estado: nuevoEstado })
     })
