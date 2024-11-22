@@ -3,7 +3,7 @@ const loginBoton = document.getElementById('login');
 
 
     function login(logindata) {
-        fetch('http://127.0.0.1:8000/api/login', {
+        fetch('https://sakura-stp-pnt20232-unisabana.onrender.com/api/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

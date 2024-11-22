@@ -1,7 +1,7 @@
 // Función para cargar pedidos desde la API
 function loadPedidos(filtroEstado = null, clienteBusqueda = null) {
     const token = sessionStorage.getItem('token');
-    const url = "http://127.0.0.1:8000/api/pedidos";
+    const url = "https://sakura-stp-pnt20232-unisabana.onrender.com/api/pedidos";
 
     fetch(url, {
         method: 'GET',
