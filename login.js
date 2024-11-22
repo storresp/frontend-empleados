@@ -16,7 +16,6 @@ const loginBoton = document.getElementById('login');
                     throw new Error(`Error: ${response.status}`);
                 }
                 sessionStorage.setItem('token', response.token);
-                console.log(response.token)
                 return response.json(); // Convertir la respuesta a JSON
             })
 
