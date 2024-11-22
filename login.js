@@ -21,6 +21,7 @@ const loginBoton = document.getElementById('login');
 
             .then(data => {
                 console.log('Respuesta del servidor:', data);
+                window.location.href = "gestionpedidos.html";
             })
             
 
