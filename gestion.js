@@ -79,7 +79,7 @@ function changePedidoEstado(id, currentEstado) {
     const token = sessionStorage.getItem('token');
     const nuevoEstado = currentEstado === "PENDIENTE" ? "ENTREGADO" : "PENDIENTE";
 
-    fetch(`http://127.0.0.1:8000/api/pedidos/${id}`, {
+    fetch(`https://sakura-stp-pnt20232-unisabana.onrender.com/api/pedidos/${id}`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${token}`,
