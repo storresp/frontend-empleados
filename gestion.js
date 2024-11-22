@@ -115,8 +115,10 @@ document.getElementById("search-client").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => loadPedidos());
 
 function cerrarSesión() {
-    sessionStorage.clear();
     window.location.href = "index.html";
 }
+
+document.addEventListener("beforeunload", () => {sessionStorage.clear();});
+
 
 document.getElementById('Logout').addEventListener("click", () => cerrarSesión());
